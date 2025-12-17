@@ -1,0 +1,382 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Hide scrollbar utility */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* ===== ANIMATIONS ===== */
+
+/* Floating animation for decorative elements */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+}
+
+@keyframes float-reverse {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(10px); }
+}
+
+/* Gentle rotation for stars */
+@keyframes twinkle {
+  0%, 100% { transform: rotate(0deg) scale(1); opacity: 1; }
+  50% { transform: rotate(10deg) scale(1.1); opacity: 0.8; }
+}
+
+/* Bounce animation */
+@keyframes bounce-gentle {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+/* Fade in animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Scale in animation */
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Pulse animation for CTA */
+@keyframes pulse-soft {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.02); }
+}
+
+/* Duolingo-style character animations */
+
+/* Eye blink animation */
+@keyframes blink {
+  0%, 90%, 100% { transform: scaleY(1); }
+  95% { transform: scaleY(0.1); }
+}
+
+/* Subtle body sway */
+@keyframes sway {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(1deg); }
+  75% { transform: rotate(-1deg); }
+}
+
+/* Eyebrow wiggle */
+@keyframes eyebrow-raise {
+  0%, 70%, 100% { transform: translateY(0); }
+  75%, 85% { transform: translateY(-2px); }
+}
+
+/* Wing flap */
+@keyframes wing-flap {
+  0%, 100% { transform: translateX(-50%) scaleY(1); }
+  50% { transform: translateX(-50%) scaleY(0.95); }
+}
+
+/* Head bob */
+@keyframes head-bob {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  25% { transform: translateY(-2px) rotate(1deg); }
+  75% { transform: translateY(-1px) rotate(-1deg); }
+}
+
+/* Breathing/idle animation */
+@keyframes breathe {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.02); }
+}
+
+/* Hop animation */
+@keyframes hop {
+  0%, 100% { transform: translateY(0); }
+  10% { transform: translateY(-8px); }
+  20% { transform: translateY(0); }
+  30% { transform: translateY(-4px); }
+  40% { transform: translateY(0); }
+}
+
+/* Logo jump animation */
+@keyframes logo-jump {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  15% { transform: translateY(-12px) rotate(-5deg); }
+  30% { transform: translateY(0) rotate(0deg); }
+  35% { transform: translateY(-2px); }
+  40% { transform: translateY(0); }
+  50% { transform: translateY(-8px) rotate(5deg); }
+  65% { transform: translateY(0) rotate(0deg); }
+  70% { transform: translateY(-2px); }
+  75% { transform: translateY(0); }
+}
+
+/* Tail wag */
+@keyframes tail-wag {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(5deg); }
+  75% { transform: rotate(-5deg); }
+}
+
+/* Sparkle pop */
+@keyframes sparkle-pop {
+  0%, 100% { transform: scale(1) rotate(0deg); opacity: 1; }
+  25% { transform: scale(1.2) rotate(5deg); opacity: 0.8; }
+  50% { transform: scale(0.9) rotate(-5deg); opacity: 1; }
+  75% { transform: scale(1.1) rotate(3deg); opacity: 0.9; }
+}
+
+/* Animation classes */
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-float-slow {
+  animation: float-slow 4s ease-in-out infinite;
+}
+
+.animate-float-reverse {
+  animation: float-reverse 3.5s ease-in-out infinite;
+}
+
+.animate-twinkle {
+  animation: twinkle 2s ease-in-out infinite;
+}
+
+.animate-bounce-gentle {
+  animation: bounce-gentle 2s ease-in-out infinite;
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.animate-fade-in-left {
+  animation: fadeInLeft 0.6s ease-out forwards;
+}
+
+.animate-fade-in-right {
+  animation: fadeInRight 0.6s ease-out forwards;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+.animate-scale-in {
+  animation: scaleIn 0.5s ease-out forwards;
+}
+
+.animate-pulse-soft {
+  animation: pulse-soft 2s ease-in-out infinite;
+}
+
+/* Duolingo-style mascot animations */
+.animate-blink {
+  animation: blink 4s ease-in-out infinite;
+}
+
+.animate-sway {
+  animation: sway 4s ease-in-out infinite;
+}
+
+.animate-eyebrow {
+  animation: eyebrow-raise 5s ease-in-out infinite;
+}
+
+.animate-wing-flap {
+  animation: wing-flap 3s ease-in-out infinite;
+}
+
+.animate-head-bob {
+  animation: head-bob 4s ease-in-out infinite;
+}
+
+.animate-breathe {
+  animation: breathe 3s ease-in-out infinite;
+}
+
+.animate-hop {
+  animation: hop 6s ease-in-out infinite;
+}
+
+.animate-tail-wag {
+  animation: tail-wag 2s ease-in-out infinite;
+}
+
+.animate-sparkle-pop {
+  animation: sparkle-pop 3s ease-in-out infinite;
+}
+
+.animate-logo-jump {
+  animation: logo-jump 4s ease-in-out infinite;
+}
+
+/* Staggered animation delays */
+.delay-100 { animation-delay: 100ms; }
+.delay-200 { animation-delay: 200ms; }
+.delay-300 { animation-delay: 300ms; }
+.delay-400 { animation-delay: 400ms; }
+.delay-500 { animation-delay: 500ms; }
+.delay-600 { animation-delay: 600ms; }
+.delay-700 { animation-delay: 700ms; }
+.delay-800 { animation-delay: 800ms; }
+
+/* Initially hidden for animation */
+.animate-on-scroll {
+  opacity: 0;
+}
+
+.animate-on-scroll.is-visible {
+  opacity: 1;
+}
+
+/* Hover lift effect for cards */
+.hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Button hover effects */
+.btn-bounce:hover {
+  animation: bounce-gentle 0.5s ease;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+@layer base {
+  :root {
+    --font-sans: "Quicksand", system-ui, -apple-system, BlinkMacSystemFont,
+      "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+      "Noto Color Emoji";
+
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+    --primary: 339 82% 61%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 339 30% 96%;
+    --secondary-foreground: 339 82% 40%;
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+    --accent: 339 30% 94%;
+    --accent-foreground: 339 82% 45%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 339 82% 61%;
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 339 82% 61%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 339 30% 94%;
+    --sidebar-accent-foreground: 339 82% 45%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 339 82% 61%;
+  }
+
+  .dark {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 339 82% 61%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 339 30% 15%;
+    --secondary-foreground: 339 30% 90%;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 339 30% 20%;
+    --accent-foreground: 339 30% 90%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 339 82% 61%;
+
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 339 82% 61%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 339 30% 20%;
+    --sidebar-accent-foreground: 339 30% 90%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 339 82% 61%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+    font-family: var(--font-sans);
+  }
+}
+
