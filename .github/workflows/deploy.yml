@@ -1,0 +1,42 @@
+name: Deploy Next.js to Netlify
+
+on:
+  push:
+    branches:
+      - dev
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build Next.js app
+        run: npm run build
+        env:
+          NEXT_PUBLIC_GOOGLE_SHEETS_API_KEY: ${{ secrets.NEXT_PUBLIC_GOOGLE_SHEETS_API_KEY }}
+          NEXT_PUBLIC_GOOGLE_SHEETS_ID: ${{ secrets.NEXT_PUBLIC_GOOGLE_SHEETS_ID }}
+
+      - name: Deploy to Netlify
+        uses: nwtgck/actions-netlify@v3
+        with:
+          publish-dir: out/
+          production-deploy: true
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_NEXT_SITE_ID }}
+        id: deploy
+
+      - name: Show deployment URL
+        run: |
+          echo "🚀 Deployment URL: ${{ steps.deploy.outputs.url }}"
+          echo "🔗 Preview URL: ${{ steps.deploy.outputs.preview_url }}"
+

@@ -4,7 +4,8 @@ This folder contains all project documentation files.
 
 ## Contents
 
-- [DEPLOYMENT.md](./DEPLOYMENT.md) - Guide for deploying the application to Netlify
+- [DEPLOYMENT.md](./DEPLOYMENT.md) - Manual deployment guide for Netlify
+- [GITHUB_ACTIONS.md](./GITHUB_ACTIONS.md) - CI/CD setup with GitHub Actions
 
 ## Notes
 
