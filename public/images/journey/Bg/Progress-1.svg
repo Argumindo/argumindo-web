@@ -1,9 +1,12 @@
-<svg width="104" height="104" viewBox="0 0 104 104" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="52" cy="52" r="49" stroke="#E2E8F0" stroke-width="6"/>
-<circle cx="52" cy="52" r="49" transform="rotate(-90 52 52)" stroke="url(#paint0_linear_117_5330)" stroke-width="6"/>
-<circle cx="52" cy="52" r="46" fill="white"/>
+<svg width="113" height="108" viewBox="0 0 113 108" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="61" cy="56" r="49" stroke="#E2E8F0" stroke-width="6"/>
+<mask id="path-2-inside-1_117_5340" fill="white">
+<path d="M61 4C67.8287 4 74.5906 5.34501 80.8995 7.95826C87.2085 10.5715 92.9409 14.4018 97.7696 19.2304C102.598 24.0591 106.428 29.7915 109.042 36.1005C111.655 42.4094 113 49.1713 113 56L61 56L61 4Z"/>
+</mask>
+<path d="M61 4C67.8287 4 74.5906 5.34501 80.8995 7.95826C87.2085 10.5715 92.9409 14.4018 97.7696 19.2304C102.598 24.0591 106.428 29.7915 109.042 36.1005C111.655 42.4094 113 49.1713 113 56L61 56L61 4Z" stroke="url(#paint0_linear_117_5340)" stroke-width="12" mask="url(#path-2-inside-1_117_5340)"/>
+<circle cx="61" cy="56" r="46" fill="white"/>
 <defs>
-<linearGradient id="paint0_linear_117_5330" x1="18.2" y1="13" x2="97.5" y2="79.3" gradientUnits="userSpaceOnUse">
+<linearGradient id="paint0_linear_117_5340" x1="22" y1="89.8" x2="88.3" y2="10.5" gradientUnits="userSpaceOnUse">
 <stop stop-color="#FBAB09"/>
 <stop offset="1" stop-color="#FED522"/>
 </linearGradient>
