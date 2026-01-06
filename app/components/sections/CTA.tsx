@@ -35,7 +35,7 @@ export function CTA() {
 
         {/* Subtitle */}
         <div className="max-w-[370px] lg:max-w-[672px] mx-auto mb-[48px] lg:mb-[66px]">
-          <p className="font-['Outfit'] text-[16px] lg:text-[20px] text-[#0e101b] leading-[24px] lg:leading-[34px]">
+          <p className="font-outfit text-[16px] lg:text-[20px] text-[#0e101b] leading-[24px] lg:leading-[34px]">
             Join thousands of students learning to think critically, speak<br className="hidden lg:block" />
             confidently, and lead with empathy.
           </p>

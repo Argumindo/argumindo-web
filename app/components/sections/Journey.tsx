@@ -39,9 +39,9 @@ function LevelCard({ level, ages, title, subtitle, items, borderColor, bgColor, 
       >
         {/* Level & Age */}
         <div className="flex items-center justify-between px-2 mb-4">
-          <span className={`font-medium text-black font-['Lato'] ${isMobile ? 'text-[14px]' : 'text-[16px]'}`}>Level {level}</span>
+          <span className={`font-medium text-black font-outfit ${isMobile ? 'text-[14px]' : 'text-[16px]'}`}>Level {level}</span>
           <span 
-            className={`text-[#0e101b] px-3 py-1 rounded-[6px] border font-['Lato'] font-medium ${isMobile ? 'text-[11px]' : 'text-[12px]'}`}
+            className={`text-[#0e101b] px-3 py-1 rounded-[6px] border font-outfit font-medium ${isMobile ? 'text-[11px]' : 'text-[12px]'}`}
             style={{ borderColor: badgeColor }}
           >
             {ages}
@@ -67,7 +67,7 @@ function LevelCard({ level, ages, title, subtitle, items, borderColor, bgColor, 
                 height={19}
                 className={isMobile ? "w-[8px] h-[13px] flex-shrink-0" : "w-[11px] h-[19px] flex-shrink-0"}
               />
-              <span className={`font-['Outfit'] text-[#0e101b] ${isMobile ? 'text-[14px]' : 'text-[16px]'}`}>{item}</span>
+              <span className={`font-outfit text-[#0e101b] ${isMobile ? 'text-[14px]' : 'text-[16px]'}`}>{item}</span>
             </li>
           ))}
         </ul>
@@ -183,7 +183,7 @@ export function Journey() {
         <h2 className="font-bold text-[24px] lg:text-[40px] text-[#0e101b] leading-[1.2] mb-3">
           Your Journey to Mastery
         </h2>
-        <p className="font-['Outfit'] text-[16px] lg:text-[20px] text-[#0e101b] max-w-[358px] lg:max-w-[672px] mx-auto leading-[1.5]">
+        <p className="font-outfit text-[16px] lg:text-[20px] text-[#0e101b] max-w-[358px] lg:max-w-[672px] mx-auto leading-[1.5]">
           Progressive curriculum designed by debate experts. Each level builds systematically on previous foundations.
         </p>
       </div>
