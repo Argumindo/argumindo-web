@@ -20,14 +20,14 @@ export function Stats() {
         {/* Stats Container - Mobile */}
         <div className="relative flex flex-col items-center px-[5px] w-[381px] mx-auto">
           {/* Top row - 2 cards with gap */}
-          <div className="flex items-center gap-[11px] mb-[-17px]">
+          <div className="flex items-center gap-[11px]">
             {/* Stat 1: 208 Video Lessons */}
-            <div className="relative w-[106px] h-[106px]">
+            <div className="relative w-[86px] h-[86px] right-[20px] top-[10px]">
               <Image
                 src="/images/stats/Frame-3.svg"
                 alt=""
-                width={108}
-                height={99}
+                width={78}
+                height={69}
                 className="w-full h-full object-contain"
               />
               <div className="absolute inset-0 flex flex-col items-center justify-center">
@@ -39,12 +39,12 @@ export function Stats() {
             </div>
 
             {/* Stat 2: 3k+ Active Learners */}
-            <div className="relative w-[96.4px] h-[96.4px]">
+            <div className="relative w-[76px] h-[76px] right-[20px] top-[10px]">
               <Image
                 src="/images/stats/Frame-2.svg"
                 alt=""
-                width={91}
-                height={90}
+                width={61}
+                height={60}
                 className="w-full h-full object-contain"
               />
               <div className="absolute inset-0 flex flex-col items-center justify-center">
@@ -57,14 +57,14 @@ export function Stats() {
           </div>
 
           {/* Bottom row - 2 cards spread */}
-          <div className="flex items-start justify-between w-full mb-[-17px]">
+          <div className="flex items-start justify-between w-full left-[20px]">
             {/* Stat 3: 4 Progressive Levels */}
-            <div className="relative w-[113.6px] h-[113.6px]">
+            <div className="relative w-[83px] h-[83px]">
               <Image
                 src="/images/stats/Frame-1.svg"
                 alt=""
-                width={105}
-                height={102}
+                width={75}
+                height={72}
                 className="w-full h-full object-contain"
               />
               <div className="absolute inset-0 flex flex-col items-center justify-center">
@@ -76,12 +76,12 @@ export function Stats() {
             </div>
 
             {/* Stat 4: 5 Core Skills Tracked */}
-            <div className="relative w-[99.4px] h-[99.4px]">
+            <div className="relative w-[79px] h-[79px] right-[40px]">
               <Image
                 src="/images/stats/Frame.svg"
                 alt=""
-                width={96}
-                height={95}
+                width={66}
+                height={65}
                 className="w-full h-full object-contain"
               />
               <div className="absolute inset-0 flex flex-col items-center justify-center">
@@ -95,7 +95,7 @@ export function Stats() {
         </div>
 
         {/* Mascot Bird - Center on mobile */}
-        <div className="absolute left-1/2 -translate-x-1/2 top-[87px] w-[130px]">
+        <div className="absolute left-1/2 -translate-x-1/2 top-[180px] w-[100px]">
           <div className="relative animate-breathe">
             {/* Thought bubble / sparkle */}
             <div className="absolute -top-[23px] -right-[15px] w-[41px] z-10 animate-sparkle-pop" style={{ transform: 'rotate(-11deg)' }}>
@@ -209,7 +209,7 @@ export function Stats() {
           <div className="relative max-w-[1200px] mx-auto px-8">
             <div className="relative h-[460px]">
               {/* Stat 1: 208 Video Lessons - Blue blob, top-left */}
-              <div className="absolute left-[15%] top-[5px] w-[200px]">
+              <div className="absolute left-[25%] bottom-[20%] top-[5px] w-[200px]">
                 <div className="relative">
                   <Image
                     src="/images/stats/Frame-3.svg"
@@ -228,7 +228,7 @@ export function Stats() {
               </div>
 
               {/* Stat 2: 3k+ Active Learners - Yellow blob, top-right */}
-              <div className="absolute right-[15%] top-0 w-[200px]">
+              <div className="absolute right-[25%] bottom-[20%] top-0 w-[200px]">
                 <div className="relative">
                   <Image
                     src="/images/stats/Frame-2.svg"
@@ -247,7 +247,7 @@ export function Stats() {
               </div>
 
               {/* Stat 3: 4 Progressive Levels - Pink blob, bottom-left */}
-              <div className="absolute left-[5%] top-[220px] w-[200px]">
+              <div className="absolute left-[10%] right top-[220px] w-[200px]">
                 <div className="relative">
                   <Image
                     src="/images/stats/Frame-1.svg"
@@ -266,7 +266,7 @@ export function Stats() {
               </div>
 
               {/* Stat 4: 5 Core Skills Tracked - Purple blob, bottom-right */}
-              <div className="absolute right-[5%] top-[230px] w-[200px]">
+              <div className="absolute right-[10%] top-[230px] w-[200px]">
                 <div className="relative">
                   <Image
                     src="/images/stats/Frame.svg"
@@ -285,7 +285,7 @@ export function Stats() {
               </div>
 
               {/* Mascot Bird - Center */}
-              <div className="absolute left-1/2 -translate-x-1/2 top-[140px] w-[226px]">
+              <div className="absolute left-1/2 -translate-x-1/2 top-[240px] w-[226px]">
                 <div className="relative animate-breathe">
                   {/* Thought bubble / sparkle */}
                   <div className="absolute -top-[30px] -right-[20px] w-[70px] z-10 animate-sparkle-pop">
