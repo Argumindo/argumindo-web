@@ -191,7 +191,7 @@ export function Footer() {
 
           {/* Copyright */}
           <div className="border-t border-[#f4a8bb] pt-4 lg:pt-[33px]">
-            <p className="font-['Outfit'] text-[14px] lg:text-[16px] text-[#0f172a] text-center leading-[20px] lg:leading-[24px]">
+            <p className="font-outfit text-[14px] lg:text-[16px] text-[#0f172a] text-center leading-[20px] lg:leading-[24px]">
               © 2025 Argumindo. All rights reserved.
             </p>
           </div>

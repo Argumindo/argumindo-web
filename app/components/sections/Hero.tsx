@@ -185,21 +185,22 @@ export function Hero() {
                 />
               </div>
 
+              {/* Arrow decoration - positioned relative to first line */}
+              <div className="absolute right-[-200px] top-[30px] z-20">
+                <Image
+                  src="/images/hero/Frame 1261161712.svg"
+                  alt=""
+                  width={194}
+                  height={127}
+                  className="w-full"
+                />
+              </div>
+
               {/* First line */}
               <div className="relative animate-fade-in-up">
                 <h1 className="font-bold text-[54px] xl:text-[63.36px] text-[#1d1f20] text-center leading-[1.4]">
                   Transform Kids into
                 </h1>
-                
-                <div className="absolute right-[-210px] top-[30px] z-[1]">
-                  <Image
-                    src="/images/hero/Frame 1261161712.svg"
-                    alt=""
-                    width={194}
-                    height={127}
-                    className="w-full"
-                  />
-                </div>
               </div>
 
               {/* Second line */}
@@ -208,8 +209,8 @@ export function Hero() {
                 <h1 className="relative font-bold text-[54px] xl:text-[63.36px] text-[#1d1f20] text-center leading-[1.4]">
                   Confident Thinkers
                 </h1>
-                <div className="absolute right-[-60px] top-[30px] animate-breathe">
-                  <div className="w-[55px] h-[55px] bg-[#f07e9e] rounded-full" />
+                <div className="absolute  right-[-70px] top-[30px] z-[1] animate-breathe">
+                  <div className="w-[55px] h-[55px] bg-[#f07e9e] rounded-full relative z-[1]" />
                 </div>
               </div>
 

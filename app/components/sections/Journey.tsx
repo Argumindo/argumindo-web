@@ -39,9 +39,9 @@ function LevelCard({ level, ages, title, subtitle, items, borderColor, bgColor, 
       >
         {/* Level & Age */}
         <div className="flex items-center justify-between px-2 mb-4">
-          <span className={`font-medium text-black font-['Lato'] ${isMobile ? 'text-[14px]' : 'text-[16px]'}`}>Level {level}</span>
+          <span className={`font-medium text-black font-outfit ${isMobile ? 'text-[14px]' : 'text-[16px]'}`}>Level {level}</span>
           <span 
-            className={`text-[#0e101b] px-3 py-1 rounded-[6px] border font-['Lato'] font-medium ${isMobile ? 'text-[11px]' : 'text-[12px]'}`}
+            className={`text-[#0e101b] px-3 py-1 rounded-[6px] border font-outfit font-medium ${isMobile ? 'text-[11px]' : 'text-[12px]'}`}
             style={{ borderColor: badgeColor }}
           >
             {ages}
@@ -59,7 +59,7 @@ function LevelCard({ level, ages, title, subtitle, items, borderColor, bgColor, 
         {/* Items */}
         <ul className="space-y-3 px-2">
           {items.map((item, index) => (
-            <li key={index} className="flex items-start gap-2">
+            <li key={index} className="flex items-center gap-2">
               <Image
                 src={index < 2 ? "/images/journey/Star 2.svg" : "/images/journey/Star 3.svg"}
                 alt=""
@@ -67,7 +67,7 @@ function LevelCard({ level, ages, title, subtitle, items, borderColor, bgColor, 
                 height={19}
                 className={isMobile ? "w-[8px] h-[13px] flex-shrink-0" : "w-[11px] h-[19px] flex-shrink-0"}
               />
-              <span className={`font-['Outfit'] text-[#0e101b] ${isMobile ? 'text-[14px]' : 'text-[16px]'}`}>{item}</span>
+              <span className={`font-outfit text-[#0e101b] ${isMobile ? 'text-[14px]' : 'text-[16px]'}`}>{item}</span>
             </li>
           ))}
         </ul>
@@ -183,7 +183,7 @@ export function Journey() {
         <h2 className="font-bold text-[24px] lg:text-[40px] text-[#0e101b] leading-[1.2] mb-3">
           Your Journey to Mastery
         </h2>
-        <p className="font-['Outfit'] text-[16px] lg:text-[20px] text-[#0e101b] max-w-[358px] lg:max-w-[672px] mx-auto leading-[1.5]">
+        <p className="font-outfit text-[16px] lg:text-[20px] text-[#0e101b] max-w-[358px] lg:max-w-[672px] mx-auto leading-[1.5]">
           Progressive curriculum designed by debate experts. Each level builds systematically on previous foundations.
         </p>
       </div>
@@ -206,7 +206,7 @@ export function Journey() {
         <div className="absolute left-[334px] top-[223px]">
           <ProgressIcon 
             iconSrc="/images/journey/mage_light-bulb-fill.svg" 
-            bgSrc="/images/journey/Bg/Progress.svg"
+            bgSrc="/images/journey/Bg/Progress-1.svg"
             ellipse1Src="/images/journey/Ellipse 3873.svg"
             ellipse2Src="/images/journey/Ellipse 3872.svg"
           />
@@ -216,7 +216,7 @@ export function Journey() {
         <div className="absolute left-[628px] top-[387px]">
           <ProgressIcon 
             iconSrc="/images/journey/mingcute_rocket-fill.svg" 
-            bgSrc="/images/journey/Bg/Progress-1.svg"
+            bgSrc="/images/journey/Bg/Progress-2.svg"
             ellipse1Src="/images/journey/Ellipse 3873-1.svg"
             ellipse2Src="/images/journey/Ellipse 3872-1.svg"
           />
@@ -226,7 +226,7 @@ export function Journey() {
         <div className="absolute left-[381px] top-[734px]">
           <ProgressIcon 
             iconSrc="/images/journey/material-symbols_chess-queen.svg" 
-            bgSrc="/images/journey/Bg/Progress-2.svg"
+            bgSrc="/images/journey/Bg/Progress-3.svg"
             ellipse1Src="/images/journey/Ellipse 3873-2.svg"
             ellipse2Src="/images/journey/Ellipse 3872-2.svg"
           />
@@ -236,7 +236,7 @@ export function Journey() {
         <div className="absolute left-[644px] top-[966px]">
           <ProgressIcon 
             iconSrc="/images/journey/bi_trophy-fill.svg" 
-            bgSrc="/images/journey/Bg/Progress-3.svg"
+            bgSrc="/images/journey/Bg/Progress-4.svg"
             ellipse1Src="/images/journey/Ellipse 3873-3.svg"
             ellipse2Src="/images/journey/Ellipse 3872-3.svg"
           />
@@ -322,7 +322,7 @@ export function Journey() {
             <div className="absolute right-[16px] top-[95px]">
               <ProgressIcon 
                 iconSrc="/images/journey/mage_light-bulb-fill.svg" 
-                bgSrc="/images/journey/Bg/Progress.svg"
+                bgSrc="/images/journey/Bg/Progress-1.svg"
                 ellipse1Src="/images/journey/Ellipse 3873.svg"
                 ellipse2Src="/images/journey/Ellipse 3872.svg"
                 size={44}
@@ -336,7 +336,7 @@ export function Journey() {
             <div className="absolute left-[16px] top-[421px]">
               <ProgressIcon 
                 iconSrc="/images/journey/mingcute_rocket-fill.svg" 
-                bgSrc="/images/journey/Bg/Progress-1.svg"
+                bgSrc="/images/journey/Bg/Progress-2.svg"
                 ellipse1Src="/images/journey/Ellipse 3873-1.svg"
                 ellipse2Src="/images/journey/Ellipse 3872-1.svg"
                 size={44}
@@ -363,7 +363,7 @@ export function Journey() {
             <div className="absolute right-[16px] top-[747px]">
               <ProgressIcon 
                 iconSrc="/images/journey/material-symbols_chess-queen.svg" 
-                bgSrc="/images/journey/Bg/Progress-2.svg"
+                bgSrc="/images/journey/Bg/Progress-3.svg"
                 ellipse1Src="/images/journey/Ellipse 3873-2.svg"
                 ellipse2Src="/images/journey/Ellipse 3872-2.svg"
                 size={44}
@@ -388,7 +388,7 @@ export function Journey() {
             <div className="absolute left-[16px] top-[1072px]">
               <ProgressIcon 
                 iconSrc="/images/journey/bi_trophy-fill.svg" 
-                bgSrc="/images/journey/Bg/Progress-3.svg"
+                bgSrc="/images/journey/Bg/Progress-4.svg"
                 ellipse1Src="/images/journey/Ellipse 3873-3.svg"
                 ellipse2Src="/images/journey/Ellipse 3872-3.svg"
                 size={44}

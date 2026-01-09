@@ -14,13 +14,13 @@ interface FeatureCardProps {
 function FeatureCard({ bgColor, iconContent, title, description, decoration, isMobile }: FeatureCardProps) {
   if (isMobile) {
     return (
-      <div 
+      <div
         className="relative w-full rounded-[18px] overflow-clip pb-[10px]"
         style={{ backgroundColor: bgColor }}
       >
         {/* Decoration */}
         {decoration}
-        
+
         {/* Content */}
         <div className="p-[10px]">
           <div className="flex flex-col gap-[21px]">
@@ -28,7 +28,7 @@ function FeatureCard({ bgColor, iconContent, title, description, decoration, isM
             <div className="w-[62px] h-[62px] relative">
               {iconContent}
             </div>
-            
+
             {/* Text */}
             <div className="px-[9px]">
               <h3 className="font-bold text-[16px] text-[#1d1f20] leading-[22px] mb-2">
@@ -45,20 +45,20 @@ function FeatureCard({ bgColor, iconContent, title, description, decoration, isM
   }
 
   return (
-    <div 
+    <div
       className="relative flex-1 min-w-[280px] h-[270px] rounded-[18px] overflow-hidden hover-lift cursor-pointer"
       style={{ backgroundColor: bgColor }}
     >
       {/* Decoration */}
       {decoration}
-      
+
       {/* Content */}
       <div className="absolute left-[16px] top-[23px] w-[calc(100%-32px)]">
         {/* Icon */}
         <div className="w-[62px] h-[62px] mb-[21px] relative">
           {iconContent}
         </div>
-        
+
         {/* Text */}
         <div className="px-[9px]">
           <h3 className="font-bold text-[20px] text-[#1d1f20] leading-[26px] mb-2">
@@ -80,8 +80,8 @@ function StarIcon({ iconSrc }: { iconSrc: string }) {
       <Image src="/images/features/Star 1.svg" alt="" width={61} height={61} className="absolute inset-0 w-full h-full" />
       <Image src={iconSrc} alt="" width={24} height={24} className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[24px] h-[24px]" />
       {/* Sparkles */}
-      <Image src="/images/features/Group 1261161714.svg" alt="" width={6} height={8} className="absolute top-[21px] right-[6px] w-[6px]" />
-      <Image src="/images/features/Group 1261161713.svg" alt="" width={5} height={9} className="absolute bottom-[19px] left-[8px] w-[5px]" />
+      <Image src="/images/features/Group 1261161714.svg" alt="" width={6} height={8} className="absolute top-[21px] left-[10px]  w-[6px]" />
+      <Image src="/images/features/Group 1261161713.svg" alt="" width={5} height={9} className="absolute bottom-[19px] right-[8px] w-[5px]" />
     </>
   );
 }
@@ -245,7 +245,7 @@ export function Features() {
             <p className="font-outfit text-[20px] text-[#0e101b] leading-[30px] max-w-[753px]">
               A complete learning platform combining expert curriculum, AI technology, and proven gamification.
             </p>
-            
+
             {/* Parrot with microphone - Desktop only */}
             <div className="absolute right-0 top-[-37px] w-[314px] h-[260px] animate-head-bob">
               <Image

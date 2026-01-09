@@ -29,7 +29,7 @@ function TestimonialCard({ quote, name, title, avatarSrc, bgColor }: Testimonial
           </div>
           
           {/* Quote text */}
-          <p className="font-['Outfit'] text-[16px] lg:text-[18px] text-[#0e101b] leading-[24px] lg:leading-[27px] min-h-[120px] lg:min-h-[135px]">
+          <p className="font-outfit text-[16px] lg:text-[18px] text-[#0e101b] leading-[24px] lg:leading-[27px] min-h-[120px] lg:min-h-[135px]">
             {quote}
           </p>
           
@@ -62,7 +62,7 @@ function TestimonialCard({ quote, name, title, avatarSrc, bgColor }: Testimonial
             <h4 className="font-semibold text-[18px] lg:text-[20px] text-[#30374f] tracking-[-0.2px] leading-[26px] lg:leading-[28px]">
               {name}
             </h4>
-            <p className="font-['Outfit'] font-medium text-[14px] lg:text-[16px] text-[#30374f] leading-[22px] lg:leading-[24px]">
+            <p className="font-outfit font-medium text-[14px] lg:text-[16px] text-[#30374f] leading-[22px] lg:leading-[24px]">
               {title}
             </p>
           </div>
